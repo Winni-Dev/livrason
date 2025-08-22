@@ -7,7 +7,6 @@ import { TbBrandJavascript } from "react-icons/tb";
 import BackTopButton from './components/BackTopButton';
 import Lenis from '@studio-freight/lenis';
 
-import Winni from './assets/winni.jpeg';
 import camion from './assets/camion.png';
 import livreur from './assets/livreur.png';
 import contact from './assets/contact.png';
