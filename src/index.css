@@ -1,3 +1,61 @@
-@tailwind base;
+ @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,body {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: auto;
+}
+/* Animation personnalisée pour le texte */
+.typing-text {
+  border-right: 3px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typing 1.5s steps(30, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+
+/* Effets de transition personnalisés */
+.smooth-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Style pour les barres de compétences */
+.skill-bar {
+  @apply w-full bg-gray-800 rounded-full h-2.5;
+}
+.skill-progress {
+  @apply bg-teal-400 h-2.5 rounded-full;
+} 
+
+p{
+  color: #1F1F1F;
+}
+
+/* .btnH{
+position: fixed;
+bottom: 30px;
+right: 30px;
+padding: 10px 15px;
+font-size: 18px;
+border-radius: 8px;
+border: none;
+background-color: #00ffc8;
+color: #000;
+cursor: pointer;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+z-index: 1000;
+} */
+
+ .cart:hover{
+  border: solid #2D5FFF 1px;
+  scale: 1.05;
+  rotate: 4deg;
+  cursor: pointer;
+  transition: .3s linear;
+}
+.cart:not(hover){
+  transition: .6s ;
+}
